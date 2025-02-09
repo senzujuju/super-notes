@@ -1,0 +1,35 @@
+{
+	"compilerOptions": {
+		"tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+		"target": "ES2020",
+		"useDefineForClassFields": true,
+		"lib": ["ESNext", "DOM", "DOM.Iterable"],
+		"module": "ESNext",
+		"skipLibCheck": true,
+
+		/* Bundler mode */
+		"moduleResolution": "bundler",
+		"allowImportingTsExtensions": true,
+		"isolatedModules": true,
+		"moduleDetection": "force",
+		"noEmit": true,
+		"jsx": "react-jsx",
+
+		/* Linting */
+		"strict": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noFallthroughCasesInSwitch": true,
+		"noUncheckedSideEffectImports": true,
+		"resolveJsonModule": true,
+		"sourceMap": true,
+		"forceConsistentCasingInFileNames": true,
+		"allowJs": false
+	},
+	"include": ["src"],
+	"exclude": [
+		"node_modules", // исключает все файлы из node_modules
+		"dist", // исключает все файлы из папки сборки
+		"**/*.test.ts" // исключает все тестовые файлы
+	]
+}
