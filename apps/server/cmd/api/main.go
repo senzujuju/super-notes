@@ -25,7 +25,11 @@ func main() {
 
 	port := getEnv("SERVER_PORT", "8080")
 
-	router.Run(":" + port)
+	err := router.Run(":" + port)
+
+	if err != nil {
+		log.Fatal("Error starting server")
+	}
 
 }
 
